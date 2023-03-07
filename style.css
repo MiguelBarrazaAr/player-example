@@ -3,7 +3,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+h1,
+p {
   text-align: center;
 }
 
