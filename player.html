@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="audio.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Global Stereo</title>
+</head>
+
+<body>
+    <main class="player-icons">
+        <h1 style="color: #ffffff;">¡Sintoniza tu radio online!</h1>
+        <p style="color: #ffffff;">El sonido que mueve al mundo.</p>
+        <div class="contenedor">
+            <button id="repro" onclick="plays()"><span class="material-symbols-outlined" aria-label="Reproducir">
+                    play_arrow
+                </span></button>
+            <button id="pau" onclick="pausar()" hidden aria-label="Pausar">
+                <span class="material-symbols-outlined">
+                    pause
+                </span>
+            </button>
+            <div class="contenedor1">
+                <button id="sbvolumen" onclick="bajarvolumen()">
+                    <span class="material-symbols-outlined" aria-label="Bajar volumen">
+                        volume_mute
+                    </span>
+                </button>
+                <button id="svolumen" onclick="subirvolumen()">
+                    <span class="material-symbols-outlined" aria-label="Subir volumen">
+                        volume_up
+                    </span>
+                </button>
+            </div>
+
+            <button id="silencio" onclick="silenciar()">
+                <span class="material-symbols-outlined" aria-label="Silenciar">
+                    volume_off
+                </span>
+            </button>
+            <button hidden id="silenciado" onclick="quitsilencio()">
+                <span class="material-symbols-outlined" aria-label="Activar volumen">
+                    volume_down
+                </span>
+            </button>
+        </div>
+    </main>
+</body>
+
+</html>
